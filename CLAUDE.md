@@ -1,4 +1,7 @@
 
+> Legacy guide for Claude-style tooling.  
+> For Codex CLI in this repository, use `AGENTS.md` as the canonical instruction entry.
+
 Default to using Bun instead of Node.js.
 
 - Use `bun <file>` instead of `node <file>` or `ts-node <file>`
