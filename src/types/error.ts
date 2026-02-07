@@ -25,5 +25,5 @@ export enum ErrorCode {
 export interface ErrorResponse {
   error: ErrorCode;
   message: string;
-  detail?: any;
+  detail?: unknown;
 }

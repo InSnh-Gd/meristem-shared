@@ -13,7 +13,7 @@ export interface Pulse {
       out: number;
     };
   };
-  plugins: Record<string, any>; // Extensible plugin metrics
+  plugins: Record<string, unknown>; // Extensible plugin metrics
 }
 
 /**

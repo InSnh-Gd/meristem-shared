@@ -4,7 +4,7 @@ export type EnvelopeType = "CMD" | "EVENT" | "REQ" | "RESP";
  * M-Bus Message Envelope
  * Following EVENT_BUS_SPEC.md §2
  */
-export interface Envelope<T = any> {
+export interface Envelope<T = unknown> {
   id: string;               // UUID-v4
   traceId: string;          // Trace ID
   source: string;           // core | node:[id] | plugin:[id]

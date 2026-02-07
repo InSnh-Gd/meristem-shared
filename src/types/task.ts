@@ -15,7 +15,7 @@ export interface Task {
   payload: {
     plugin_id: string;
     action: string;
-    params: Record<string, any>;
+    params: Record<string, unknown>;
     volatile: boolean;      // Cleanup workspace after completion
   };
   lease: {
