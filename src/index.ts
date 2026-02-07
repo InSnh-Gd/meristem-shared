@@ -1,4 +1,5 @@
 export * from "./types/envelope";
+export * from "./types/call-depth";
 export * from "./types/heartbeat";
 export * from "./types/pulse";
 export * from "./types/task";

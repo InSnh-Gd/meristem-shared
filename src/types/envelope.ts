@@ -7,6 +7,7 @@ export type EnvelopeType = "CMD" | "EVENT" | "REQ" | "RESP";
 export interface Envelope<T = unknown> {
   id: string;               // UUID-v4
   traceId: string;          // Trace ID
+  call_depth?: number;      // 调用链深度，缺省按 0 处理
   source: string;           // core | node:[id] | plugin:[id]
   target: string;           // all | node:[id] | group:[name]
   type: EnvelopeType;
