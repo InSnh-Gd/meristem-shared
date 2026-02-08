@@ -17,7 +17,8 @@
   "scripts": {
     "build": "bun build src/index.ts --outdir dist --target node --format esm && bun run build-types",
     "build-types": "tsc --emitDeclarationOnly",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "prepare": "bun run build"
   },
   "devDependencies": {
     "typescript": "^5.7.2",
