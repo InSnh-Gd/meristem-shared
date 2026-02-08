@@ -7,6 +7,7 @@ export type TaskStatusType = "PENDING" | "RUNNING" | "PAUSED" | "FINISHED" | "FA
 export interface Task {
   task_id: string;          // UUID v4
   owner_id: string;         // User ID or Plugin ID
+  org_id: string;           // Organization boundary for multi-tenant isolation
   trace_id: string;         // For cross-node tracing
   target_node_id: string;   // Routing destination
   type: "COMMAND" | "GIG_JOB";

@@ -6,6 +6,8 @@ export * from "./types/hardware-profile";
 export * from "./types/task";
 export * from "./types/error";
 export * from "./types/node";
+export * from "./types/org";
 export * from "./types/plugin";
+export * from "./types/role";
 export * from "./types/log";
 export * from "./types/mappers";

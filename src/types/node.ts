@@ -44,6 +44,7 @@ export type NodeStatusTransport = {
 
 export type NodeTransport = {
   node_id: string;
+  org_id: string;
   hwid: string;
   hostname: string;
   persona: NodePersona;
