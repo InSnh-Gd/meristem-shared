@@ -6,6 +6,8 @@ To install dependencies:
 bun install
 ```
 
+Toolchain policy: Bun-only. Do not use `node` / `npm` / `yarn` / `pnpm`, and do not commit `package-lock.json`.
+
 To run:
 
 ```bash
