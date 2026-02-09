@@ -1,5 +1,5 @@
 {
-  "name": "meristem-shared",
+  "name": "@insnh-gd/meristem-shared",
   "version": "0.1.0",
   "description": "Shared TypeScript types and interfaces for Meristem project",
   "type": "module",
