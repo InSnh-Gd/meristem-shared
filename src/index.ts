@@ -11,3 +11,4 @@ export * from "./types/plugin";
 export * from "./types/role";
 export * from "./types/log";
 export * from "./types/mappers";
+export * from "./types/api";

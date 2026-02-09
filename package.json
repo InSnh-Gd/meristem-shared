@@ -18,6 +18,7 @@
     "build": "bun build src/index.ts --outdir dist --target node --format esm && bun run build-types",
     "build-types": "tsc --emitDeclarationOnly",
     "clean": "rm -rf dist",
+    "check:no-runtime-deps": "bun run scripts/check-no-runtime-deps.ts",
     "prepare": "bun run build"
   },
   "devDependencies": {

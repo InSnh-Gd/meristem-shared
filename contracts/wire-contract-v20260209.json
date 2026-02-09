@@ -1,0 +1,34 @@
+{
+  "version": "2026-02-09",
+  "http": {
+    "join": {
+      "path": "/api/v1/join",
+      "method": "POST",
+      "request": {
+        "hwid": "string",
+        "hostname": "string",
+        "persona": "AGENT|GIG",
+        "hardware_profile": "optional object",
+        "hardware_profile_hash": "optional sha256 hex",
+        "org_id": "optional string"
+      },
+      "response_success": {
+        "success": true,
+        "data": {
+          "node_id": "string",
+          "core_ip": "string",
+          "status": "new|existing|pending_approval",
+          "message": "optional string"
+        }
+      },
+      "response_error": {
+        "success": false,
+        "error": "string"
+      }
+    }
+  },
+  "ws": {
+    "note": "WS contract remains unchanged in PR-3a and will be upgraded in PR-3b."
+  }
+}
+
