@@ -1,3 +1,5 @@
+import type { StreamProfilePreset } from './stream-profile';
+
 export type WsAckAction = 'CONNECTED' | 'SUBSCRIBE' | 'UNSUBSCRIBE' | 'PONG';
 
 export type WsErrorCode = 'AUTH_REQUIRED' | 'AUTH_INVALID' | 'NOT_CONNECTED' | 'INVALID_MESSAGE' | 'INVALID_TOPIC';
@@ -8,6 +10,7 @@ export type WsAckMessage = {
   type: 'ACK';
   action: WsAckAction;
   topic?: string;
+  stream_profile?: StreamProfilePreset;
 };
 
 export type WsErrorMessage = {

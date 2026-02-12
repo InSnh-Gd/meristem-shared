@@ -18,6 +18,7 @@ export type JoinRequestPayload = {
   hardware_profile?: HardwareProfile;
   hardware_profile_hash?: string;
   org_id?: string;
+  network_lease_generation?: number;
 };
 
 export type JoinSuccessData = {
@@ -35,6 +36,9 @@ export type JoinSuccessResponse = {
 export type JoinErrorResponse = {
   success: false;
   error: string;
+  message?: string;
+  expected_network_lease_generation?: number | null;
+  rollback_hint?: string;
 };
 
 export type JoinResponsePayload = JoinSuccessResponse | JoinErrorResponse;

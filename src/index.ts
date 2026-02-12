@@ -13,3 +13,4 @@ export * from "./types/log";
 export * from "./types/mappers";
 export * from "./types/api";
 export * from "./types/ws";
+export * from "./types/stream-profile";

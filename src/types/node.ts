@@ -12,11 +12,18 @@ export type NodeRoleFlagsTransport = {
 
 export type NodeNetworkMode = 'DIRECT' | 'RELAY';
 
+export type NodeNetworkIpShadowLeaseTransport = {
+  reclaim_status: 'ACTIVE' | 'PENDING_RECLAIM' | 'RECLAIMED';
+  reclaim_at: number;
+  reclaim_generation?: number;
+};
+
 export type NodeNetworkTransport = {
   virtual_ip: string;
   current_relay_id?: string;
   mode: NodeNetworkMode;
   v: number;
+  ip_shadow_lease?: NodeNetworkIpShadowLeaseTransport;
 };
 
 export type NodeInventoryTransport = {
