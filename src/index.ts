@@ -1,3 +1,4 @@
+export * from "./types/m-service";
 export * from "./types/envelope";
 export * from "./types/call-depth";
 export * from "./types/heartbeat";
@@ -8,8 +9,11 @@ export * from "./types/error";
 export * from "./types/node";
 export * from "./types/org";
 export * from "./types/plugin";
+export * from "./types/plugin-message";
+export * from "./types/manifest";
 export * from "./types/role";
 export * from "./types/log";
+export * from "./types/log-collector";
 export * from "./types/mappers";
 export * from "./types/api";
 export * from "./types/ws";
